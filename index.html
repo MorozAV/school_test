@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Школьные тесты для самостоятельной подготовки. География, 5 класс: как открывали Землю.">
+  <title>Школьные тесты — главная</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f5ef;
+      --surface: #fff;
+      --ink: #153b3f;
+      --muted: #526c6f;
+      --accent: #0b6a73;
+      --line: #d8e2dd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 17px/1.6 "Segoe UI", system-ui, sans-serif;
+    }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin-inline: auto; }
+    .header { padding-block: 26px; border-bottom: 1px solid var(--line); }
+    .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 750; text-decoration: none; }
+    .brand-icon {
+      display: grid; place-items: center; width: 38px; height: 38px;
+      border-radius: 12px; background: var(--accent); color: white;
+    }
+    .hero { display: grid; grid-template-columns: 1fr 250px; gap: 40px; align-items: center; padding-block: 64px 58px; }
+    .eyebrow { margin: 0 0 14px; color: var(--accent); font-size: 12px; letter-spacing: .14em; font-weight: 750; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h3 { font-family: Georgia, "Times New Roman", serif; }
+    h1 { max-width: 700px; margin-bottom: 20px; font-size: clamp(36px, 5.2vw, 58px); line-height: 1.12; font-weight: 500; }
+    .lead { max-width: 560px; margin-bottom: 0; color: var(--muted); font-size: 18px; }
+    .globe { width: 100%; height: auto; color: var(--accent); }
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+    h2 { margin-bottom: 0; font-size: 23px; font-weight: 700; }
+    .count { margin: 0; color: var(--muted); font-size: 14px; }
+    .test-card { display: grid; grid-template-columns: 220px 1fr; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
+    .cover {
+      display: flex; flex-direction: column; justify-content: space-between; gap: 32px;
+      padding: 28px; background: #deebe5; color: #24594f;
+    }
+    .cover-label { font-size: 12px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+    .compass { width: 120px; height: 120px; align-self: center; }
+    .cover-bottom { font-family: Georgia, "Times New Roman", serif; font-size: 23px; }
+    .card-content { padding: 32px 36px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .tag { padding: 3px 11px; border-radius: 6px; background: #edf3f0; color: #345c53; font-size: 13px; font-weight: 600; }
+    .tag.secondary { background: #f4f1e8; color: #725e32; }
+    h3 { margin-bottom: 12px; font-size: clamp(26px, 4vw, 34px); line-height: 1.2; font-weight: 500; }
+    .description { max-width: 590px; margin-bottom: 20px; color: var(--muted); }
+    .features { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0 0 26px; padding: 0; list-style: none; color: var(--muted); font-size: 14px; }
+    .features li::before { content: "✓"; margin-right: 7px; color: var(--accent); font-weight: 700; }
+    .start {
+      display: inline-flex; align-items: center; justify-content: center; gap: 28px;
+      padding: 12px 22px; border-radius: 10px; background: var(--accent);
+      color: #fff; text-decoration: none; font-weight: 650;
+    }
+    .start:hover { background: #08545c; }
+    .hint { margin: 22px 0 0; color: var(--muted); font-size: 14px; }
+    footer { margin-top: 64px; padding-block: 22px 30px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    @media (max-width: 680px) {
+      .hero { grid-template-columns: 1fr; gap: 0; padding-block: 40px; }
+      .globe { display: none; }
+      .test-card { grid-template-columns: 1fr; }
+      .cover { flex-direction: row; align-items: center; gap: 16px; padding: 18px 24px; }
+      .compass { width: 64px; height: 64px; order: 1; }
+      .cover-bottom { display: none; }
+      .card-content { padding: 26px 24px; }
+      .section-heading { flex-wrap: wrap; gap: 4px; }
+      footer { margin-top: 40px; }
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --bg: #102329; --surface: #173138; --ink: #e3eeea;
+        --muted: #afc3c0; --accent: #80d4cb; --line: #315058;
+      }
+      .brand-icon, .start { background: #80d4cb; color: #102329; }
+      .start:hover { background: #a1e1da; }
+      .cover { background: #22473f; color: #c5e4cf; }
+      .tag { background: #24483e; color: #c5e4cf; }
+      .tag.secondary { background: #45402b; color: #ead9aa; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a class="brand" href="./index.html" aria-label="Школьные тесты — главная">
+        <span class="brand-icon" aria-hidden="true">✓</span>
+        Школьные тесты
+      </a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Повторяй · Проверяй · Узнавай</p>
+        <h1 id="page-title">Маленький шаг к большим знаниям.</h1>
+        <p class="lead">Выбери тему, повтори материал и проверь себя. Учись в своём темпе — к сложным вопросам всегда можно вернуться.</p>
+      </div>
+      <svg class="globe" viewBox="0 0 250 250" fill="none" aria-hidden="true">
+        <circle cx="125" cy="125" r="112" fill="currentColor" opacity=".06"/>
+        <g stroke="currentColor" stroke-width="1.5">
+          <circle cx="125" cy="113" r="77"/>
+          <ellipse cx="125" cy="113" rx="32" ry="77"/>
+          <ellipse cx="125" cy="113" rx="60" ry="77"/>
+          <path d="M48 113h154M58 76h134M58 150h134M125 36v154"/>
+          <path d="M191 48a93 93 0 0 1-132 131M125 207v18m-37 0h74" stroke-width="3" stroke-linecap="round"/>
+        </g>
+        <path d="M51 189c36-8 119-50 153-102" stroke="#b06e45" stroke-width="2" stroke-dasharray="4 6"/>
+        <circle cx="178" cy="119" r="6" fill="#b06e45"/>
+      </svg>
+    </section>
+    <section aria-labelledby="tests-title">
+      <div class="section-heading">
+        <h2 id="tests-title">Выбери тест</h2>
+        <p class="count">Доступен 1 тест</p>
+      </div>
+      <article class="test-card" aria-labelledby="geography-title">
+        <div class="cover" aria-hidden="true">
+          <span class="cover-label">Исследуем мир</span>
+          <svg class="compass" viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="48" stroke="currentColor" opacity=".35"/>
+            <circle cx="60" cy="60" r="40" stroke="currentColor" stroke-dasharray="1 7"/>
+            <path d="m60 16 12 32-12 12-12-12z" fill="currentColor"/>
+            <path d="m60 104-12-32 12-12 12 12z" fill="currentColor" opacity=".3"/>
+            <path d="m16 60 32-12 12 12-12 12zm88 0L72 72 60 60l12-12z" stroke="currentColor"/>
+            <circle cx="60" cy="60" r="5" fill="#b06e45"/>
+          </svg>
+          <span class="cover-bottom">География</span>
+        </div>
+        <div class="card-content">
+          <div class="tags">
+            <span class="tag">География · 5 класс</span>
+            <span class="tag secondary">§ 4</span>
+          </div>
+          <h3 id="geography-title">Как открывали Землю</h3>
+          <p class="description">От первых представлений о Земле до великих экспедиций. Вспомни путешественников, открытия и важные даты.</p>
+          <ul class="features">
+            <li>Повторение материала</li>
+            <li>Проверка знаний</li>
+            <li>Разбор ошибок</li>
+          </ul>
+          <a class="start" href="./Geography_5_grade/Paragraph_4_How_the_Earth_was_Discovered.html" aria-label="Начать тест «Как открывали Землю»">
+            Начать тест <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+      <p class="hint">Можно сначала повторить тему, а затем перейти к вопросам.</p>
+    </section>
+  </main>
+  <footer class="wrap">Каждая попытка — ещё одна возможность разобраться.</footer>
+</body>
+</html>
