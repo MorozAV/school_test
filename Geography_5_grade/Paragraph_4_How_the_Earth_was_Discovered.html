@@ -53,6 +53,8 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .btn.ghost{background:transparent}
 .btn[disabled]{opacity:.45;cursor:default}
+.home{font-weight:700;color:var(--muted);text-decoration:none;font-size:.92rem}
+.home:hover{color:var(--accent)}
 
 .qtop{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .route{display:flex;flex-wrap:wrap;gap:6px;padding:4px 0;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 10px) left center/100% 2px no-repeat}
@@ -258,6 +260,7 @@ function menu(){
     return `<button class="block ${cls}" data-go="${k}"><span class="n">${b.n}</span><h3>${b.title}</h3><span>${b.desc}</span><span class="meta">${count(k)} ${unit(k)}${r}</span></button>`;
   };
   app.innerHTML = `
+    <a class="home" href="../index.html">← Все тесты</a>
     <header style="display:flex;flex-direction:column;gap:10px">
       <span class="eyebrow">География · 5 класс</span>
       <h1>Как люди открывали и изучали Землю</h1>

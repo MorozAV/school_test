@@ -50,6 +50,8 @@ button:focus-visible,.opt:focus-visible{outline:3px solid var(--accent);outline-
 .btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:10px 16px;font-weight:700}
 .btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .btn.ghost{background:transparent}
+.home{font-weight:700;color:var(--muted);text-decoration:none;font-size:.92rem}
+.home:hover{color:var(--accent)}
 
 /* quiz */
 .qtop{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
@@ -226,6 +228,7 @@ function menu(){
     return `<button class="block ${cls}" data-go="${k}"><span class="n">${b.n}</span><h3>${b.title}</h3><span>${b.desc}</span><span class="meta">${count} вопросов${r}</span></button>`;
   };
   app.innerHTML = `
+    <a class="home" href="../index.html">← Все тесты</a>
     <header style="display:flex;flex-direction:column;gap:10px">
       <span class="eyebrow">Информатика · 5 класс</span>
       <h1>От абака до ЭВМ</h1>
