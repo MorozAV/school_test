@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Школьные тесты для самостоятельной подготовки. География и информатика, 5 класс.">
+  <meta name="description" content="Школьные тесты для самостоятельной подготовки. География, информатика и история, 5 класс.">
   <title>Школьные тесты — главная</title>
   <style>
     :root {
@@ -44,6 +44,7 @@
     .test-card { display: grid; grid-template-columns: 220px 1fr; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
     .test-card + .test-card { margin-top: 20px; }
     .cover.informatics { background: #e3e8f6; color: #354f86; }
+    .cover.history { background: #f6e6d6; color: #8a4419; }
     .cover {
       display: flex; flex-direction: column; justify-content: space-between; gap: 32px;
       padding: 28px; background: #deebe5; color: #24594f;
@@ -88,6 +89,7 @@
       .start:hover { background: #a1e1da; }
       .cover { background: #22473f; color: #c5e4cf; }
       .cover.informatics { background: #283956; color: #c5d4f4; }
+      .cover.history { background: #4a3021; color: #f3d2b4; }
       .tag { background: #24483e; color: #c5e4cf; }
       .tag.secondary { background: #45402b; color: #ead9aa; }
     }
@@ -125,7 +127,7 @@
     <section aria-labelledby="tests-title">
       <div class="section-heading">
         <h2 id="tests-title">Выбери тест</h2>
-        <p class="count">Доступно 2 теста</p>
+        <p class="count">Доступно 3 теста</p>
       </div>
       <article class="test-card" aria-labelledby="geography-title">
         <div class="cover" aria-hidden="true">
@@ -179,6 +181,35 @@
             <li>Разбор ошибок</li>
           </ul>
           <a class="start" href="./Informatics_5_grade/From_Abacus_to_Computer.html" aria-label="Начать тест «От абака до ЭВМ»">
+            Начать тест <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+      <article class="test-card" aria-labelledby="history-title">
+        <div class="cover history" aria-hidden="true">
+          <span class="cover-label">Древний Восток</span>
+          <svg class="compass" viewBox="0 0 120 120" fill="none">
+            <path d="M60 14v12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <rect x="52" y="26" width="16" height="10" rx="2" stroke="currentColor" stroke-width="3"/>
+            <path d="M24 78a36 36 0 0 1 72 0z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M16 78h88v10H16zM10 88h100v12H10z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="60" cy="58" r="5" fill="#b06e45"/>
+          </svg>
+          <span class="cover-bottom">История</span>
+        </div>
+        <div class="card-content">
+          <div class="tags">
+            <span class="tag">История Древнего мира · 5 класс</span>
+            <span class="tag secondary">§ 17</span>
+          </div>
+          <h3 id="history-title">Древняя Индия</h3>
+          <p class="description">Хараппа и Мохенджо-Даро, приход ариев, цари Чандрагупта и Ашока, «золотой век» Гуптов и варны. Даты, личности, факты и ответы на вопросы учебника.</p>
+          <ul class="features">
+            <li>Повторение материала</li>
+            <li>Лента времени</li>
+            <li>Ответы на вопросы учебника</li>
+          </ul>
+          <a class="start" href="./History_5_grade/Paragraph_17_Ancient_India.html" aria-label="Начать тест «Древняя Индия»">
             Начать тест <span aria-hidden="true">→</span>
           </a>
         </div>
